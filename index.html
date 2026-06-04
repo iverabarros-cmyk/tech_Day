@@ -1,294 +1,140 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Comedor del Colegio MarkTwain</title>
-
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header{
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-        }
-
-        nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo{
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .hero{
-            height: 85vh;
-            background-image: url("images.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero-text{
-            background-color: rgba(0,0,0,0.5);
-            padding: 40px;
-            border-radius: 15px;
-        }
-
-        .hero h1{
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
-
-        .hero p{
-            font-size: 22px;
-        }
-
-        section{
-            padding: 60px 10%;
-        }
-
-        .menu h2{
-            text-align: center;
-            font-size: 40px;
-            color: #003366;
-            margin-bottom: 40px;
-        }
-
-        .cards{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .card{
-            background-color: white;
-            width: 250px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-
-        .card:hover{
-            transform: translateY(-10px);
-        }
-
-        .card img{
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card-content{
-            padding: 20px;
-        }
-
-        .card-content h3{
-            margin-bottom: 10px;
-            color: #003366;
-        }
-
-        .schedule{
-            background-color: #003366;
-            color: white;
-            text-align: center;
-        }
-
-        .schedule h2{
-            margin-bottom: 20px;
-            font-size: 40px;
-        }
-
-        table{
-            width: 70%;
-            margin: auto;
-            border-collapse: collapse;
-            background-color: white;
-            color: black;
-        }
-
-        table, th, td{
-            border: 1px solid #003366;
-        }
-
-        th{
-            background-color: #003366;
-            color: white;
-        }
-
-        th, td{
-            padding: 15px;
-        }
-
-        footer{
-            background-color: #001f3f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-    </style>
+    <title>Comedor Colegio MarkTwain</title>
+    <meta name="description" content="La página web del comedor del Colegio Mark Twain está diseñada para brindar a los padres información clara y actualizada sobre la alimentación de los alumnos. En ella se puede consultar el menú semanal, los horarios del comedor, información nutricional y avisos importantes relacionados con el servicio">
+    <meta name="keywords" content="Comedor,Menu,Colegio MarkTwain menu,Colegio">
+    <meta name="author" content="Camila de Allende,Ignacio VeraBarros">
 </head>
-
-<body>
-
+<body>   
     <header>
-
-        <nav>
-
-            <div class="logo">
-                 Comedor del Colegio MarkTwain
-            </div>
-
-        </nav>
-
+        <h1>
+        Comedor del Colegio Mark Twain
+        </h1>
+        <hr>
     </header>
+   
+   
+    <nav>
+        <button><a href="http://">Menu</a></button>
+        <button><a href="http://">Mas</a></button>
+        <button><a href="http://">sobre nosotros</a></button>
+    </nav>
+   
+    
+   <section>
+    <br>
+    <h2>
+    ¿Vianda o Comedor?
+    </h2>
+    <p>En el Colegio Mark Twain, los alumnos pueden elegir entre asistir con vianda propia o almorzar en el comedor del colegio. Quienes llevan vianda cuentan con acceso a microondas, cubiertos y postre incluido para mayor comodidad. Además, el comedor ofrece comidas de muy buena calidad, variadas y equilibradas, supervisadas por una nutricionista encargada de controlar la alimentación y planificar los menús de cada semana. También existen opciones especiales para alumnos celíacos, disponibles mediante un servicio adicional con costo aparte.</p>
+   </section>
+   <br>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
 
-    <section class="hero">
 
-        <div class="hero-text">
-
-            <h1>Comedor del Colegio MarkTwain</h1>
-
-          
-        </div>
-
-    </section>
-
-    <section class="menu">
-
-        <h2>Menú de la Semana</h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKtC4O2RbxoCnmMoftyU_OCnflUm-5LmpSg&s" alt="Pollo">
-
-                <div class="card-content">
-                    <h3>Lunes</h3>
-                    <p>Pollo con ensalada de papas</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="https://storage.googleapis.com/fitia_recipe_images/GR-R-V-00007367%2Fv3%2Frect.jpeg" alt="Carne">
-
-                <div class="card-content">
-                    <h3>Martes</h3>
-                    <p>Carne con arroz</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" alt="Fideos">
-
-                <div class="card-content">
-                    <h3>Miércoles</h3>
-                    <p>Fideos</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
-
-                <div class="card-content">
-                    <h3>Jueves</h3>
-                    <p>Pizza</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="https://img-global.cpcdn.com/steps/36776663fe281927/400x400cq80/photo.jpg" alt="Milanesa">
-
-                <div class="card-content">
-                    <h3>Viernes</h3>
-                    <p>Milanesa con puré</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="schedule">
-
-        <h2>Horarios del Comedor</h2>
-
-        <table>
-
-            <tr>
-                <th>Día</th>
-                <th>Horario</th>
-            </tr>
-
-            <tr>
-                <td>Lunes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Martes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Miércoles</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Jueves</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Viernes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © 2026 Comedor del Colegio MarkTwain
-        </p>
-
-    </footer>
-
+    
+        <section>
+            <form action="">
+                <fieldset style="width:15%;">
+                    <legend>Informacion Personal</legend>
+                    <label for="name">
+                        Nombre:
+                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="age">
+                        Edad:
+                        <input type="number" name="age" id="age" min="1" max="100" value="5">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="email">
+                          Email:
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="password">
+                        Contraseña:
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="gender">
+                        Género:
+                        <select name="gender" id="gender">
+                            <option value="-">Seleccione una opción</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="P">Prefiero no decirlo</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label for="comments">
+                        Comentarios:
+                        <textarea name="comments" id=""></textarea>
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset style="width:15%;">
+                    <legend>Capacidades</legend>
+                    <label for="programming">
+                        ¿Sabes programar?
+                        
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="yesRadio">
+                                        <input type="radio" name="radioBTN" id="yesRadio" value ="yesRadio"> SI
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="noRadio">
+                                        <input type="radio" name="radioBTN" id="noRadio" value="noRadio"> NO
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </label>
+                    
+                    <label for="languajes">
+                        Lenguajes:
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="c#">
+                                        <input type="checkbox" name="c#" id="c#" value="c#"> C#
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="java">
+                                        <input type="checkbox" name="java" id="java" value="java"> Java
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="python">
+                                        <input type="checkbox" name="python" id="python" value="python"> Python
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </label>
+                </fieldset>
+                <br>
+                <br>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
+
