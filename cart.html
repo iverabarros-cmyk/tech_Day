@@ -3,292 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Comedor del Colegio MarkTwain</title>
-
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header{
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-        }
-
-        nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo{
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .hero{
-            height: 85vh;
-            background-image: url("images.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero-text{
-            background-color: rgba(0,0,0,0.5);
-            padding: 40px;
-            border-radius: 15px;
-        }
-
-        .hero h1{
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
-
-        .hero p{
-            font-size: 22px;
-        }
-
-        section{
-            padding: 60px 10%;
-        }
-
-        .menu h2{
-            text-align: center;
-            font-size: 40px;
-            color: #003366;
-            margin-bottom: 40px;
-        }
-
-        .cards{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .card{
-            background-color: white;
-            width: 250px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-
-        .card:hover{
-            transform: translateY(-10px);
-        }
-
-        .card img{
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card-content{
-            padding: 20px;
-        }
-
-        .card-content h3{
-            margin-bottom: 10px;
-            color: #003366;
-        }
-
-        .schedule{
-            background-color: #003366;
-            color: white;
-            text-align: center;
-        }
-
-        .schedule h2{
-            margin-bottom: 20px;
-            font-size: 40px;
-        }
-
-        table{
-            width: 70%;
-            margin: auto;
-            border-collapse: collapse;
-            background-color: white;
-            color: black;
-        }
-
-        table, th, td{
-            border: 1px solid #003366;
-        }
-
-        th{
-            background-color: #003366;
-            color: white;
-        }
-
-        th, td{
-            padding: 15px;
-        }
-
-        footer{
-            background-color: #001f3f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-    </style>
+    <title>Menú | Comedor Colegio Mark Twain</title>
+    <meta name="description" content="Formulario para elegir vianda, comedor o menú celíaco en el Colegio Mark Twain.">
+    <meta name="keywords" content="Comedor, menú, vianda, Colegio Mark Twain">
+    <meta name="author" content="Camila de Allende, Ignacio Vera Barros">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-
-        <nav>
-
-            <div class="logo">
-                 Comedor del Colegio MarkTwain
-            </div>
-
+    <header class="site-header">
+        <a class="brand" href="./index.html">Comedor Mark Twain</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="./index.html">Inicio</a>
+            <a href="./cart.html" aria-current="page">Menú</a>
+            <a href="./other.html">Extras</a>
         </nav>
-
     </header>
 
-    <section class="hero">
+    <main>
+        <section class="page-intro reveal">
+            <p class="eyebrow">Elección familiar</p>
+            <h1>Vianda o comedor</h1>
+            <p>Los alumnos pueden traer vianda propia o almorzar en el comedor del colegio. Quienes traen vianda cuentan con microondas, cubiertos y postre. El comedor ofrece platos variados, equilibrados y supervisados por una nutricionista.</p>
+        </section>
 
-        <div class="hero-text">
-
-            <h1>Comedor del Colegio MarkTwain</h1>
-
-          
-        </div>
-
-    </section>
-
-    <section class="menu">
-
-        <h2>Menú de la Semana</h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKtC4O2RbxoCnmMoftyU_OCnflUm-5LmpSg&s" alt="Pollo">
-
-                <div class="card-content">
-                    <h3>Lunes</h3>
-                    <p>Pollo con ensalada de papas</p>
-                </div>
-
+        <section class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Inscripción</p>
+                <h2>Formulario de elección</h2>
             </div>
 
-            <div class="card">
+            <form class="form-grid" action="">
+                <fieldset>
+                    <legend>Datos del alumno</legend>
 
-                <img src="https://storage.googleapis.com/fitia_recipe_images/GR-R-V-00007367%2Fv3%2Frect.jpeg" alt="Carne">
+                    <label for="name">
+                        Nombre del alumno
+                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
+                    </label>
 
-                <div class="card-content">
-                    <h3>Martes</h3>
-                    <p>Carne con arroz</p>
-                </div>
+                    <label for="age">
+                        Edad
+                        <input type="number" name="age" id="age" min="1" max="100" value="5">
+                    </label>
 
-            </div>
+                    <label for="email">
+                        Email del tutor
+                        <input type="email" name="email" id="email" placeholder="familia@ejemplo.com">
+                    </label>
 
-            <div class="card">
+                    <label for="password">
+                        Contraseña
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    </label>
 
-                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" alt="Fideos">
+                    <label for="meal-option">
+                        Opción de almuerzo
+                        <select name="meal-option" id="meal-option">
+                            <option value="">Seleccione una opción</option>
+                            <option value="lonchera">Lonchera</option>
+                            <option value="comedor">Comedor</option>
+                            <option value="celiaco">Menú celíaco</option>
+                        </select>
+                    </label>
 
-                <div class="card-content">
-                    <h3>Miércoles</h3>
-                    <p>Fideos</p>
-                </div>
+                    <label for="comments">
+                        Comentarios
+                        <textarea name="comments" id="comments" placeholder="Indica cualquier detalle importante"></textarea>
+                    </label>
+                </fieldset>
 
-            </div>
+                <fieldset>
+                    <legend>Necesidades alimentarias</legend>
 
-            <div class="card">
+                    <div class="option-group">
+                        <p>¿Alguna intolerancia?</p>
+                        <label class="choice" for="yesRadio">
+                            <input type="radio" name="radioBTN" id="yesRadio" value="yes">
+                            Sí
+                        </label>
+                        <label class="choice" for="noRadio">
+                            <input type="radio" name="radioBTN" id="noRadio" value="no">
+                            No
+                        </label>
+                    </div>
 
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+                    <div class="option-group">
+                        <p>Tipo de intolerancia</p>
+                        <label class="choice" for="lacteos">
+                            <input type="checkbox" name="lacteos" id="lacteos" value="lacteos">
+                            Lácteos
+                        </label>
+                        <label class="choice" for="gluten">
+                            <input type="checkbox" name="gluten" id="gluten" value="gluten">
+                            Gluten
+                        </label>
+                        <label class="choice" for="ninguna">
+                            <input type="checkbox" name="ninguna" id="ninguna" value="ninguna">
+                            Ninguna
+                        </label>
+                    </div>
 
-                <div class="card-content">
-                    <h3>Jueves</h3>
-                    <p>Pizza</p>
-                </div>
+                    <div class="notice">
+                        <strong>Importante:</strong> el menú celíaco se coordina con la administración del comedor y puede tener un costo adicional.
+                    </div>
+                </fieldset>
 
-            </div>
+                <button class="button primary form-submit" type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
 
-            <div class="card">
-
-                <img src="https://img-global.cpcdn.com/steps/36776663fe281927/400x400cq80/photo.jpg" alt="Milanesa">
-
-                <div class="card-content">
-                    <h3>Viernes</h3>
-                    <p>Milanesa con puré</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="schedule">
-
-        <h2>Horarios del Comedor</h2>
-
-        <table>
-
-            <tr>
-                <th>Día</th>
-                <th>Horario</th>
-            </tr>
-
-            <tr>
-                <td>Lunes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Martes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Miércoles</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Jueves</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-            <tr>
-                <td>Viernes</td>
-                <td>12:00 - 14:30</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © 2026 Comedor del Colegio MarkTwain
-        </p>
-
+    <footer class="site-footer">
+        <p>© 2026 Comedor del Colegio Mark Twain</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-</html>+
+</html>

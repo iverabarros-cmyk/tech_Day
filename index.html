@@ -1,144 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comedor Colegio MarkTwain</title>
-    <meta name="description" content="La página web del comedor del Colegio Mark Twain está diseñada para brindar a los padres información clara y actualizada sobre la alimentación de los alumnos. En ella se puede consultar el menú semanal, los horarios del comedor, información nutricional y avisos importantes relacionados con el servicio">
-    <meta name="keywords" content="Comedor,Menu,Colegio MarkTwain menu,Colegio">
-    <meta name="author" content="Camila de Allende,Ignacio VeraBarros">
+    <title>Inicio | Comedor Colegio Mark Twain</title>
+    <meta name="description" content="Sitio del comedor del Colegio Mark Twain con menú semanal, horarios, opciones de vianda y extras para las familias.">
+    <meta name="keywords" content="Comedor, menú, Colegio Mark Twain, vianda, almuerzo escolar">
+    <meta name="author" content="Camila de Allende, Ignacio Vera Barros">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>   
-    <header>
-        <h1>
-        Comedor del Colegio Mark Twain
-        </h1>
-        <hr>
+<body>
+    <header class="site-header">
+        <a class="brand" href="./index.html">Comedor Mark Twain</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="./index.html" aria-current="page">Inicio</a>
+            <a href="./cart.html">Menú</a>
+            <a href="./other.html">Extras</a>
+        </nav>
     </header>
-   
-   
-    <nav>
-        <a href="./cart.html">Menu</a>
-        <a href="./index.html">Inicio</a>
-        <a href="./other.html">Sobre nosotros</a>
-    </nav>
-   
+
     <main>
-   <section>
-    <br>
-    <h2>
-    ¿Vianda o Comedor?
-    </h2>
-    <p>En el Colegio Mark Twain, los alumnos pueden elegir entre asistir con vianda propia o almorzar en el comedor del colegio. Quienes llevan vianda cuentan con acceso a microondas, cubiertos y postre incluido para mayor comodidad. Además, el comedor ofrece comidas de muy buena calidad, variadas y equilibradas, supervisadas por una nutricionista encargada de controlar la alimentación y planificar los menús de cada semana. También existen opciones especiales para alumnos celíacos, disponibles mediante un servicio adicional con costo aparte.</p>
-   </section>
-   <br>
-<hr>
-          <section>
-            <form action="">
-                <fieldset style="width:15%;">
-                    <legend>Vianda o Comedor Formulario</legend>
-                    <label for="name">
-                        Nombre del alumno:
-                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="age">
-                        Edad:
-                        <input type="number" name="age" id="age" min="1" max="100" value="5">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="email">
-                          Email tutor:
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="password">
-                        Contraseña:
-                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="gender">
-                        Opcion de vianda
-                        <select name="gender" id="gender">
-                            <option value="-">Seleccione una opción</option>
-                            <option value="M">Lonchera</option>
-                            <option value="F">Comedor</option>
-                            <option value="P"> Menu celiaco</option>
-                        </select>
-                    </label>
-                    <br>
-                    <br>
-                    <label for="comments">
-                        Comentarios:
-                        <textarea name="comments" id=""></textarea>
-                    </label>
-                </fieldset>
-                <br>
-                <fieldset style="width:15%;">
-                    <legend>Extras</legend>
-                    <label for="programming">
-                        ¿Alguna intolerancia?
-                        
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="yesRadio">
-                                        <input type="radio" name="radioBTN" id="yesRadio" value ="yesRadio"> SI
-                                    </label>
-                                </td>
-                                <td>
-                                    <label for="noRadio">
-                                        <input type="radio" name="radioBTN" id="noRadio" value="noRadio"> NO
-                                    </label>
-                                </td>
-                            </tr>
-                        </table>
-                    </label>
-                    
-                    <label for="languajes">
-                        Intolerancia
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="c#">
-                                        <input type="checkbox" name="c#" id="c#" value="c#"> Lacteos
-                                    </label>
-                                </td>
-                                <td>
-                                    <label for="java">
-                                        <input type="checkbox" name="java" id="java" value="java"> Gluten
-                                    </label>
-                                </td>
-                                <td>
-                                    <label for="python">
-                                        <input type="checkbox" name="python" id="python" value="python"> Ninguna
-                                    </label>
-                                </td>
-                            </tr>
-                        </table>
-                    </label>
-                </fieldset>
-                <br>
-                <br>
-                <input type="submit" value="ENVIAR">
-            </form>
+        <section class="hero reveal">
+            <div class="hero-content">
+                <p class="eyebrow">Almuerzos escolares</p>
+                <h1>Comidas claras, cuidadas y pensadas para cada alumno.</h1>
+                <p>Consultá el menú semanal, los horarios del comedor y las opciones de vianda para organizar mejor la semana familiar.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="./cart.html">Ver menú</a>
+                    <a class="button secondary" href="#horarios">Horarios</a>
+                </div>
+            </div>
         </section>
 
-        </main>
-        <hr>
-        <br>
+        <section class="section menu-preview reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Semana actual</p>
+                <h2>Menú de la semana</h2>
+            </div>
 
-       <footer>
+            <div class="cards">
+                <article class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKtC4O2RbxoCnmMoftyU_OCnflUm-5LmpSg&s" alt="Plato de pollo con ensalada de papas">
+                    <div class="card-content">
+                        <span>Lunes</span>
+                        <h3>Pollo con ensalada de papas</h3>
+                    </div>
+                </article>
 
-        <p>
-            © 2026 Comedor del Colegio MarkTwain
-        </p>
+                <article class="card">
+                    <img src="https://storage.googleapis.com/fitia_recipe_images/GR-R-V-00007367%2Fv3%2Frect.jpeg" alt="Plato de carne con arroz">
+                    <div class="card-content">
+                        <span>Martes</span>
+                        <h3>Carne con arroz</h3>
+                    </div>
+                </article>
 
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80" alt="Plato de fideos">
+                    <div class="card-content">
+                        <span>Miércoles</span>
+                        <h3>Fideos con salsa</h3>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza recién horneada">
+                    <div class="card-content">
+                        <span>Jueves</span>
+                        <h3>Pizza con ensalada</h3>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://img-global.cpcdn.com/steps/36776663fe281927/400x400cq80/photo.jpg" alt="Milanesa con puré">
+                    <div class="card-content">
+                        <span>Viernes</span>
+                        <h3>Milanesa con puré</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split reveal" id="horarios">
+            <div>
+                <p class="eyebrow">Organización</p>
+                <h2>Horarios del comedor</h2>
+                <p>El servicio funciona de lunes a viernes con una franja amplia para que cada curso pueda almorzar de manera cómoda y ordenada.</p>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Lunes</td><td>12:00 - 14:30</td></tr>
+                        <tr><td>Martes</td><td>12:00 - 14:30</td></tr>
+                        <tr><td>Miércoles</td><td>12:00 - 14:30</td></tr>
+                        <tr><td>Jueves</td><td>12:00 - 14:30</td></tr>
+                        <tr><td>Viernes</td><td>12:00 - 14:30</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Comedor del Colegio Mark Twain</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
